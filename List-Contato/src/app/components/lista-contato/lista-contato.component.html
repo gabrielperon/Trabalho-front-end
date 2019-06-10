@@ -1,0 +1,26 @@
+<div>
+  <div style="background: #0080FF; color: white"><h3>Agenda Fácil</h3></div>
+  <div>
+    <table style="border: 1px solid black">
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Telefone</th>
+        <th>Açoes</th>
+      <tr *ngFor="let contato of contatos">
+        <td>{{contato.id}}</td>
+        <td>{{contato.nome}}</td>
+        <td>{{contato.email}}</td>
+        <td>{{contato.telefone}}</td>
+        <td><button (click)="editar(contato.id)">Editar</button></td>
+        <td><button (click)="excluir(contato.id)">Excluir</button></td>
+      </tr>   
+    </table>
+  </div>
+  <div style="display: flex; align-content: space-between; padding: 10px">
+    <div style="width: 32%">
+      <button (click)="adicionar()">Adicionar</button>
+    </div>
+ 
+  </div>
+</div>

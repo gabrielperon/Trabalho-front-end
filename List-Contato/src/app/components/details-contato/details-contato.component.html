@@ -1,0 +1,29 @@
+<div>
+  <div>
+    <div style="display: flex; justify-content: center;">
+      <h2>Inclusão/Alteração de Contatos</h2>
+    </div>
+    <div style="border: 1px solid black;padding: 8px;">
+      <div style="display: flex;margin-top: 5px;">
+        <span style="width: 10%">Nome:</span>
+        <input [(ngModel)]="contato.nome" style="width: 90%" type="text" name="name">
+      </div>
+      <div style="display: flex;margin-top: 5px;">
+        <span style="width: 10%">E-mail:</span>
+        <input [(ngModel)]="contato.email" style="width: 90%" type="text" name="name">
+      </div>
+      <div style="display: flex;margin-top: 5px;">
+        <span style="width: 10%">Telefone:</span>
+        <input [(ngModel)]="contato.telefone" style="width: 90%" type="text" name="name">
+      </div>
+      <div style="display: flex;justify-content: flex-end;padding: 5px 0px">
+        <div style="margin-right: 10px;">
+            <button (click)="cancelar()">Cancelar</button>
+        </div>
+        <div>
+            <button (click)="salvar()">Salvar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
